@@ -1,0 +1,44 @@
+[
+  {
+    "type": "division",
+    "title": "In Praise Of Wisdom",
+    "id": "in-praise-of-wisdom",
+    "contents": [
+      {
+        "type": "division",
+        "title": "Placeholder",
+        "id": "in-praise-of-wisdom-placeholder",
+        "contents": [
+          {
+            "type": "content",
+            "title": "Chapter 1",
+            "id": "in-praise-of-wisdom-placeholder-chapter-1",
+            "content": "The Way of a doctrine is not the true Way \r\n\r\nThe Name that can be Named is not the true Name \r\n\r\n\r\n\r\nSeen Namelessly, it is the origin of Heaven and Earth \r\n\r\nSeen as Named, it is the Mother of all things \r\n\r\n\r\n\r\nTherefore we must remain without desire \r\n\r\nIn order to see its Mystery \r\n\r\n\r\n\r\nHolding onto desire \r\n\r\nWe may only see its manifestation \r\n\r\nThese two share the same origin \r\n\r\nBut they emerge to receive different names \r\n\r\nTogether let's call these the depths \r\n\r\nIn the deepest of the depths \r\n\r\nIs the gate to the Mystery in all things",
+            "order": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "division",
+    "title": "Wayfarers Progress",
+    "id": "wayfarers-progress",
+    "contents": [
+      {
+        "type": "division",
+        "title": "Part 1",
+        "id": "wayfarers-progress-part-1",
+        "contents": [
+          {
+            "type": "content",
+            "title": "Chapter 1",
+            "id": "wayfarers-progress-part-1-chapter-1",
+            "content": "The Way of a doctrine is not the true Way \r\n\r\nThe Name that can be Named is not the true Name \r\n\r\n\r\n\r\nSeen Namelessly, it is the origin of Heaven and Earth \r\n\r\nSeen as Named, it is the Mother of all things \r\n\r\n\r\n\r\nTherefore we must remain without desire \r\n\r\nIn order to see its Mystery \r\n\r\n\r\n\r\nHolding onto desire \r\n\r\nWe may only see its manifestation \r\n\r\nThese two share the same origin \r\n\r\nBut they emerge to receive different names \r\n\r\nTogether let's call these the depths \r\n\r\nIn the deepest of the depths \r\n\r\nIs the gate to the Mystery in all things",
+            "order": null
+          }
+        ]
+      }
+    ]
+  }
+]
