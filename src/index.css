@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* You can add custom styles below if needed */
 body {
   margin: 0;
   min-height: 100vh;
