@@ -20,7 +20,7 @@ function TianmuLibrary() {
             {
               title: "Chapter 1: The First Light",
               content: `
-# The First Light
+# The First Light of 
 
 In the gentle dawn of understanding,
 Where wisdom first breaks through the night...
