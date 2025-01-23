@@ -30,4 +30,3 @@ There upon the seat of Death, the palace of the Gods,
 
 Its halls fill with the sounds of trumpets and the melodies of hymns.
 
-
