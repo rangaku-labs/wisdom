@@ -7,6 +7,7 @@ I carry with me Enlightenment, Consciousness, and Creativity,
 I create bounty for those who hear my words diligently,
 
 I am the Beginning and the End, the foremost among those worthy of worship,
+
 I have placed me in all things, giving me infinite abodes and allowing all things to bear my name,
 
 It is through I alone, that my Children eat, breathe, see, speak, and dream.
