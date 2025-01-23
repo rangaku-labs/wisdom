@@ -17,3 +17,17 @@ export function parseTianmuOnly(fullStructure) {
     sections: tianmuContents
   };
 }
+
+export function parseGoodWorks(fullStructure) {
+  return {
+    sections: fullStructure.map(collection => ({
+      id: collection.id,
+      title: collection.title,
+      contents: collection.contents.map(item => ({
+        id: item.id,
+        title: item.title,
+        content: item.content
+      }))
+    }))
+  };
+}

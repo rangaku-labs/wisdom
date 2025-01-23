@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { Book, Menu, Home, Sun, Moon, Search, Type, ArrowUpDown } from 'lucide-react';
-import structure from '../data/structure.json';
+import structure from '../data/goodworks-structure.json';
 import Sidebar from './Sidebar';
 
-export default function TianmuLibrary({ theme, setTheme, onBack }) {
+export default function GoodWorks({ theme, setTheme, onBack }) {
   const [selectedContent, setSelectedContent] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [selectedItemId, setSelectedItemId] = useState(null);
   const [viewMode, setViewMode] = useState('tree');
   const [fontSize, setFontSize] = useState(() => 
-    localStorage.getItem('tianmu-fontSize') || 'text-base'
+    localStorage.getItem('goodworks-fontSize') || 'text-base'
   );
   const [lineHeight, setLineHeight] = useState(() => 
-    localStorage.getItem('tianmu-lineHeight') || '0.6'
+    localStorage.getItem('goodworks-lineHeight') || '0.6'
   );
   const [isLoading, setIsLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [readProgress, setReadProgress] = useState(() => 
-    JSON.parse(localStorage.getItem('tianmu-progress') || '{}')
+    JSON.parse(localStorage.getItem('goodworks-progress') || '{}')
   );
 
   // Keyboard shortcuts
@@ -36,8 +36,8 @@ export default function TianmuLibrary({ theme, setTheme, onBack }) {
 
   // Save preferences
   useEffect(() => {
-    localStorage.setItem('tianmu-fontSize', fontSize);
-    localStorage.setItem('tianmu-lineHeight', lineHeight);
+    localStorage.setItem('goodworks-fontSize', fontSize);
+    localStorage.setItem('goodworks-lineHeight', lineHeight);
   }, [fontSize, lineHeight]);
 
   // Loading state
@@ -50,7 +50,7 @@ export default function TianmuLibrary({ theme, setTheme, onBack }) {
   useEffect(() => {
     if (selectedContent) {
       const progress = { ...readProgress, [selectedContent.id]: true };
-      localStorage.setItem('tianmu-progress', JSON.stringify(progress));
+      localStorage.setItem('goodworks-progress', JSON.stringify(progress));
       setReadProgress(progress);
     }
   }, [selectedContent]);
@@ -138,7 +138,7 @@ export default function TianmuLibrary({ theme, setTheme, onBack }) {
             className="px-3 py-1 rounded bg-gray-900 text-white border border-gray-700 focus:outline-none focus:border-white"
           />
         </div>
-        <h1 className="font-bold text-xl">Tianmu Canon</h1>
+        <h1 className="font-bold text-xl">Good Work Project</h1>
         <div className="flex items-center space-x-2">
           <button
             onClick={() => setFontSize(size => size === 'text-base' ? 'text-lg' : 'text-base')}
@@ -202,10 +202,10 @@ export default function TianmuLibrary({ theme, setTheme, onBack }) {
                 <div className="text-center py-20">
                   <Book className="w-16 h-16 mx-auto mb-4 text-white opacity-50" />
                   <h2 className="text-xl text-white">
-                    Select a text to begin your journey
+                    Select a text to begin reading
                   </h2>
                   <p className="text-gray-400 mt-2">
-                    Choose from our sacred texts in the sidebar
+                    Choose from our collection of spiritual texts in the sidebar
                   </p>
                 </div>
               )}

@@ -41,10 +41,14 @@ export function ArchiveSelector({ onEnterArchive, theme, setTheme }) {
               academic complexity, ensuring these timeless teachings remain open and 
               comprehensible to everyone.
             </p>
-            <button className="flex items-center space-x-2 bg-gray-700 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors">
-              <span>Enter Archive</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
+            // In the Good Work Project button section, update the button to:
+          <button 
+          onClick={() => onEnterArchive('goodworks')}
+           className="flex items-center space-x-2 bg-gray-700 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
+          >
+           <span>Enter Archive</span>
+          <ArrowRight className="w-4 h-4" />
+          </button>
           </div>
         </div>
       </div>
