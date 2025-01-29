@@ -1,0 +1,16 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Book spine shadow -->
+  <path d="M128 96C128 78.3269 142.327 64 160 64H416C433.673 64 448 78.3269 448 96V416C448 433.673 433.673 448 416 448H160C142.327 448 128 433.673 128 416V96Z" fill="#1a1a1a"/>
+  
+  <!-- Book cover -->
+  <path d="M96 80C96 62.3269 110.327 48 128 48H384C401.673 48 416 62.3269 416 80V400C416 417.673 401.673 432 384 432H128C110.327 432 96 417.673 96 400V80Z" fill="#ffffff"/>
+  
+  <!-- Decorative lines -->
+  <path d="M144 144H368" stroke="#1a1a1a" stroke-width="16" stroke-linecap="round"/>
+  <path d="M144 208H368" stroke="#1a1a1a" stroke-width="16" stroke-linecap="round"/>
+  <path d="M144 272H368" stroke="#1a1a1a" stroke-width="16" stroke-linecap="round"/>
+  <path d="M144 336H272" stroke="#1a1a1a" stroke-width="16" stroke-linecap="round"/>
+  
+  <!-- Circle decoration -->
+  <circle cx="256" cy="96" r="8" fill="#1a1a1a"/>
+</svg>

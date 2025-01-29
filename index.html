@@ -3,12 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An archive of sacred texts and spiritual wisdom from various traditions" />
+    <meta name="theme-color" content="#000000" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Sacred Texts Archive" />
+    <meta property="og:description" content="Explore spiritual wisdom from various traditions" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/wisdom/assets/book-BHm2HhU4.svg" />
+    <link rel="apple-touch-icon" href="/wisdom/assets/book-B_SY1GJM.png" />
+    
+    <!-- Preload Fonts -->
+    <link 
+      rel="preload" 
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <!-- GitHub Pages Router Script -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+
+    <!-- Prevent Flash of Unstyled Content -->
+    <style>
+      body {
+        background: #000;
+        margin: 0;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      #root {
+        min-height: 100vh;
+      }
+      /* Loading State */
+      .initial-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-family: inherit;
+      }
+    </style>
+
     <title>Sacred Texts Archive</title>
-    <script type="module" crossorigin src="/wisdom/assets/index-CLt-T0kd.js"></script>
-    <link rel="stylesheet" crossorigin href="/wisdom/assets/index-C0-xlFkc.css">
+    <script type="module" crossorigin src="/wisdom/assets/index-DCxUrbmF.js"></script>
+    <link rel="stylesheet" crossorigin href="/wisdom/assets/index-Bzi7-jZp.css">
   </head>
   <body>
-    <div id="root"></div>
-    <!-- Do not reference the compiled script manually -->
+    <div id="root">
+      <!-- Initial Loading State -->
+      <div class="initial-loader">
+        <div>Loading Sacred Texts...</div>
+      </div>
+    </div>
+
+    <!-- Prevent long-press on mobile -->
+    <script>
+      document.addEventListener('contextmenu', function(e) {
+        if (e.target.nodeName === 'IMG') {
+          e.preventDefault();
+        }
+      });
+    </script>
   </body>
 </html>
