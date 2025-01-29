@@ -15,13 +15,6 @@
     <link rel="icon" type="image/svg+xml" href="/wisdom/assets/book-BHm2HhU4.svg" />
     <link rel="apple-touch-icon" href="/wisdom/assets/book-B_SY1GJM.png" />
     
-    <!-- Preload Fonts -->
-    <link 
-      rel="preload" 
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
 
     <!-- GitHub Pages Router Script -->
     <script type="text/javascript">
@@ -40,34 +33,33 @@
     <!-- Prevent Flash of Unstyled Content -->
     <style>
       body {
-        background: #000;
+        background: var(--tibetan-maroon);
         margin: 0;
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+        font-family: "Times New Roman", Times, serif;
       }
-      #root {
-        min-height: 100vh;
-      }
-      /* Loading State */
       .initial-loader {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: #000;
+        background: var(--deep-maroon);
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: #fff;
-        font-family: inherit;
+        color: var(--tibetan-gold);
+        font-family: "Courier New", monospace;
+      }
+      .initial-loader:after {
+        content: "⚡ Loading Ancient Wisdom... ⚡";
+        margin-top: 1rem;
       }
     </style>
 
     <title>Sacred Texts Archive</title>
-    <script type="module" crossorigin src="/wisdom/assets/index-DCxUrbmF.js"></script>
-    <link rel="stylesheet" crossorigin href="/wisdom/assets/index-Bzi7-jZp.css">
+    <script type="module" crossorigin src="/wisdom/assets/index-M-bRNvZB.js"></script>
+    <link rel="stylesheet" crossorigin href="/wisdom/assets/index-S5Q8Ww7m.css">
   </head>
   <body>
     <div id="root">
